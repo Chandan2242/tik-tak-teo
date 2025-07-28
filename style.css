@@ -1,0 +1,31 @@
+.one,.two,.three,.four,.five,.six,.seven,.eight,.nine{
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
+  float:left;
+  font-size: 70px;
+  text-align: center;
+}
+.one,.four,.seven{
+  clear: left;
+  border-left: none;
+}
+.main{
+  text-align: center;
+  /* justify-content: center; */
+  margin: 90px 20px 50px 90px;
+  align-items: center;
+
+}
+
+.one,.two,.three{
+  border-top: none;
+}
+
+.three, .six,.nine{
+  border-right: none;
+}
+
+.seven,.eight,.nine{
+  border-bottom: none;
+}
