@@ -39,8 +39,9 @@ function filldata(event) {
 
     }
   } else {
-    alert("game over");
+    alert("game over!");
     resetdata();
+
   }
 
 }
