@@ -1,3 +1,8 @@
+*{
+  box-sizing: border-box;
+  top: 0;
+  margin: 0;
+}
 body{
   background-color: rgb(166, 197, 98);
 }
@@ -18,10 +23,16 @@ body{
 .main{
   text-align: center;
   /* justify-content: center; */
-  margin: 90px 20px 50px 90px;
+  /* margin: 90px 20px 50px 90px; */
+  /* margin: auto; */
   align-items: center;
   position: absolute;
-  top: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-153.2px) translateY(-153.2px);
+
+  /* transform-origin: center; */
+  /* border: 2px solid black; */
 
 }
 
