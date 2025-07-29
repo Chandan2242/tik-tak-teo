@@ -15,11 +15,20 @@ let count = 1;
 
 function filldata(event) {
   let win = "";
+  console.log(count) 
   if (count <= 9) {
     if (count % 2 != 0) {
       event.target.innerHTML = "X"
+      event.target.style.color="red"
+      
+      event.target.style.pointerEvents="none";
+      
     } else {
       event.target.innerHTML = "O";
+      event.target.style.color="blue"
+      event.target.style.pointerEvents="none";
+
+
     }
     count++;
     // console.log(event.target.innerText);
@@ -52,6 +61,8 @@ console.log(reset)
 function resetdata() {
   for (i = 0; i <= 8; i++) {
     reset[i].innerHTML = "";
+    reset[i].style.pointerEvents="auto"
+    
     // console.log(arr);
   }
 }
